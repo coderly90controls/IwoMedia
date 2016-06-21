@@ -1,0 +1,69 @@
+3、shareSDK做分享登陆
+0、地图定位(推荐使用高德)
+1、环信-即时通讯；
+2、微信支付；
+
+
+ 
+*、使用AS；
+
+*、使用多媒体；
+*、使用数据库；
+
+
+
+
+路由器：
+leo_z
+zly100220095
+
+
+Google账号：
+zhouliyou95@gmail.com   zlygoogle&95
+
+github: qq邮箱
+
+
+krystal0703
+
+
+迅雷：
+787552265
+1949wang09yi16
+
+宽带：
+021020160226030030
+82954591
+
+
+
+
+配置环境变量：
+
+java 
+例：
+
+JAVA_HOME = "C:\Program Files\Java\jdk1.5.0"
+
+path ="%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin "
+
+classpath= ".;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar"
+
+
+
+
+
+android  
+例：
+
+android
+
+E:\ADT\adt-bundle-windows-x86\sdk\platform-tools;E:\ADT\adt-bundle-windows-x86\sdk\tools
+
+Path   %android%
+
+
+
+服务器地址 hk.zyns.com
+账号 publicvpn
+密码 20140702
