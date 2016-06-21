@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:layout_marginBottom="5dip" 
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_search"
+            style="@style/EditTextStyle"
+            android:layout_marginRight="50dip"
+            android:hint="请输入好友昵称/手机号" />
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="45dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_bg_radiu"
+            android:gravity="center"
+            android:padding="5dip"
+            android:src="@drawable/sousuo" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/qun"
+        android:layout_width="fill_parent"
+        android:layout_height="79dip"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/qun_point"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_qun"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="1dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/create_img"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/comm_color"
+            android:src="@drawable/quanjianqun" />
+
+        <TextView
+            style="@style/BigTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建群" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/create_friend"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg_white_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/qun_id1"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/comm_color"
+            android:src="@drawable/jiahaoyou" />
+
+        <TextView
+            android:id="@+id/qun_tex_id"
+            style="@style/BigTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加手机联系人" />
+    </LinearLayout>
+
+</LinearLayout>

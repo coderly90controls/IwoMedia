@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+     >
+
+    <com.android.iwo.media.view.XListView
+        android:id="@+id/view_my_chase_layout_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@android:color/transparent"
+        android:visibility="gone" />
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:visibility="visible"
+         android:id="@+id/moren_mychase_i"
+        >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="@drawable/moren_mychase"
+            android:id="@+id/moren_mychase_img"
+            android:scaleType="fitXY"
+            />
+    </RelativeLayout>
+     
+</RelativeLayout>

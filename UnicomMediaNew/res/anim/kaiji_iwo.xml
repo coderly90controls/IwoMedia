@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true" >
+
+    <!-- 定义图片播放顺序和间隔 -->
+    <item
+        android:drawable="@drawable/a1135_101"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/a1135_2"
+        android:duration="400"/>
+   <!-- <item
+        android:drawable="@drawable/a1135_3"
+        android:duration="400"/> --> 
+    <item
+        android:drawable="@drawable/a1135_4"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/a1135_5"
+        android:duration="400"/>
+    <!-- <item
+        android:drawable="@drawable/a1135_6"
+        android:duration="400"/> -->
+    <!-- <item
+        android:drawable="@drawable/a1135_7"
+        android:duration="400"/> -->
+    <!--<item
+        android:drawable="@drawable/a1135_8"
+        android:duration="400"/>  -->
+    
+    <!-- <item
+        android:drawable="@drawable/a1135_9"
+        android:duration="400"/> -->
+    <!-- <item
+        android:drawable="@drawable/a1135_10"
+        android:duration="400"/> -->
+    <!--   <item
+        android:drawable="@drawable/a1135_11"
+        android:duration="400"/>-->
+   
+    <!--   <item
+        android:drawable="@drawable/a1135_12"
+        android:duration="200"/>-->
+   <!--    <item
+        android:drawable="@drawable/a1135_13"
+        android:duration="400"/> -->
+ <!-- <item
+        android:drawable="@drawable/a1135_14"
+        android:duration="400"/> -->
+    
+    <!--   <item
+        android:drawable="@drawable/a1135_15"
+        android:duration="400"/>-->
+        <!--  <item
+        android:drawable="@drawable/a1135_16"
+        android:duration="400"/> -->
+   
+   <!--  <item
+        android:drawable="@drawable/a1135_17"
+        android:duration="400"/> -->
+   <!--    <item
+        android:drawable="@drawable/a1135_18"
+        android:duration="400"/>-->
+  <!--  <item
+        android:drawable="@drawable/a1135_19"
+        android:duration="400"/> -->
+   <!--   <item
+        android:drawable="@drawable/a1135_20"
+        android:duration="400"/> -->
+  
+    <item
+        android:drawable="@drawable/a1135_21"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/a1135_22"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/a1135_23"
+        android:duration="400"/>
+    <item
+        android:drawable="@drawable/a1135_24"
+        android:duration="400"/>
+    <!-- <item
+        android:drawable="@drawable/a1135_25"
+        android:duration="400"/>  -->
+        <!-- <item
+        android:drawable="@drawable/a1135_26"
+        android:duration="400"/> -->
+   
+    <!--  <item
+        android:drawable="@drawable/a1135_27"
+        android:duration="400"/> -->
+   <!--   <item
+        android:drawable="@drawable/a1135_28"
+        android:duration="400"/>-->
+     
+
+</animation-list>

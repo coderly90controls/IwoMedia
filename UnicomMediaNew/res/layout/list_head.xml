@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_gallery"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_bg_color" >
+
+    <com.android.iwo.media.view.ChildViewPager
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+    	android:layout_marginRight="18dp"
+         />
+
+    <LinearLayout
+        android:id="@+id/tiao_daohang"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/gallery"
+        android:background="@color/comm_bg_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dp"
+         >
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/tiao_daohang"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:visibility="visible"
+        android:id="@+id/tiaodong_xian"
+        android:background="@color/white" />
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/tiaodong_xian"
+        android:background="@color/comm_bg_color"
+        />
+
+</RelativeLayout>

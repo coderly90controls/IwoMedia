@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/comm_title"/>
+    
+    <RelativeLayout 
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:background="#ffffff"
+        android:padding="7dip">
+        <EditText 
+            android:id="@+id/search"
+            style="@style/EditTextStyle"
+            android:textColor="#000000"
+            android:hint="请输入姓名"/>
+        
+        <ImageView 
+            android:id="@+id/search_img"
+            android:layout_width="40dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/comm_color"
+            android:padding="5dip"
+            android:src="@drawable/sousuo"/>
+    </RelativeLayout>
+
+    <ListView 
+        android:id="@+id/list"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+    <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView 
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/tel_add_xuanzhong"
+            android:text="确定选中号码"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:background="@color/comm_color_chense"
+            />
+        <TextView 
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tel_delete_xuanzhong"
+            android:text="取消全部号码"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:background="@color/comm_color_chense"
+            />
+        
+    </LinearLayout>
+</LinearLayout>

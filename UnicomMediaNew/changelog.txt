@@ -1,0 +1,22 @@
+=========== XiaoYing App SDK.20140423===========
+1.update UI to V2.7.0
+2.update some jar,so,and res.
+
+=========== XiaoYing App SDK.20140421===========
+1.Create doc directory and move documents to it
+2.delete to keep classic templates
+3.add doc/Templates for post install templates case
+4.fix some issues
+5.update many jar,so,and res.
+
+=========== XiaoYing App SDK.20140412===========
+1.Fixed issue that camcorder can not display template correctly
+2.Optimized loading speed for first running
+3.Fixed some internal issues.
+
+Changed files:
+assets/xiaoying/libs/libcescamengine.so
+assets/xiaoying/libs/libcesliveeditor.so
+libs/xiaoying_core.jar
+libs/xiaoying_ui.jar
+

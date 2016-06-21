@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="comm_bg_color">#91ca91</color>
+    <color name="comm_bg_color_new">#a5d7a4</color>
+    <color name="tab_select_color">#171717</color>
+    <color name="tab_normal_color">#262626</color>
+    <color name="comm_color">#FF6713</color>
+    <color name="comm_color_deep">#3693F6</color>
+    <color name="comm_night_color">#ff2fa0</color>
+    <color name="comm_green_color">#FF6713</color>
+    <color name="comm_white_color">#ffffff</color>
+    <color name="comm_pink_color">#F5567C</color>
+    <color name="comm_pink_color_qian">#F9A3A3</color>
+    <color name="color_3f3f51">#3f3f51</color>
+    <color name="color_9d9d9d">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="translucent_black">#aa000000</color>
+    <color name="comm_color_chense">#F9EE09</color>
+
+    <!-- #9d9d9d -->
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="comm_black_color">#3f3f51</color>
+    <color name="comm_text_gray_color">#A2A2A2</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="color_bian_xian_bebebe">#BEBEBE</color>
+    <color name="transparent_aiwo">#00000000</color>
+    <color name="de_new_huang">#FFF100</color>
+    <color name="de_new_lu">#61B67D</color>
+    <color name="view_play">#CC666666</color>
+    <color name="ban_tou_ming">#55000000</color>
+
+
+</resources>

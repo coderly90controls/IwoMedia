@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="38dip">
+
+    <ImageView
+        android:layout_width="60dip"
+        android:layout_height="25dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/share_logo"
+        android:layout_marginLeft="10dip"
+        android:scaleType="fitXY" />
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="标题"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/unlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="3dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:background="@drawable/share_bg_selector"
+        android:textColor="#ffffff"
+        android:text="注销"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/share_bg_selector"
+        android:paddingBottom="3dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:text="返回"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="#4496d4" />
+
+</RelativeLayout>

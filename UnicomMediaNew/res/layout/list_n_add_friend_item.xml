@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_line"
+    android:orientation="vertical"
+    android:padding="1dip" >
+
+    <ImageView
+        android:id="@+id/head"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/ico_default" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/BigTextStyle"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/head" />
+
+    <TextView
+        android:id="@+id/desc"
+        style="@style/norTextStyle"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dip"
+        android:layout_toLeftOf="@+id/add"
+        android:layout_toRightOf="@+id/head"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip"
+        android:background="@drawable/bg_white_line"
+        android:gravity="center"
+        android:padding="7dip" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:background="@drawable/yaoqing" />
+
+        <TextView
+            android:id="@+id/add_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:text="邀请"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

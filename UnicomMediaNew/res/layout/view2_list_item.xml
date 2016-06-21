@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/time_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天"
+            android:textColor="@color/comm_color"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/bg_white_line"
+        android:padding="1dip" >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginRight="7dip"
+            android:background="@drawable/ico_default"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="52dip"
+            android:background="@drawable/ico_msg_tip"
+            android:gravity="center"
+            android:padding="3dip"
+            android:text="99"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/head"
+            android:text="蓉儿"
+            android:textColor="@color/color_3f3f51"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/head"
+            android:layout_marginTop="15dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="欢迎美女"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/hous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:text="16:30"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="10dp" />
+        
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hous"
+            android:background="@drawable/btn_blue_radiu_selector"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="8dip"
+            android:paddingBottom="8dip"
+            android:text="同意"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

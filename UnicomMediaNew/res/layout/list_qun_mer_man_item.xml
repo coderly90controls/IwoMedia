@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="66dip"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:orientation="vertical" >
+    
+    <!-- 群成员管理item -->
+
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:padding="1dip"
+	    android:background="@drawable/bg_white_line">
+	    
+	    <ImageView 
+	        android:id="@+id/head"
+	        android:layout_width="64dip"
+	        android:layout_height="64dip"
+	        android:layout_marginRight="5dip"
+	        android:background="@drawable/ico_default"/>
+	    
+	    <TextView 
+	        android:id="@+id/name"
+	        style="@style/BigTextStyle"
+	        android:layout_toRightOf="@+id/head"
+	        android:layout_marginTop="5dip"
+	        android:text="name"/>
+	     <TextView 
+	        android:id="@+id/desc"
+	        style="@style/norTextStyle"
+	        android:layout_toRightOf="@+id/head"
+	        android:layout_alignParentBottom="true"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:layout_marginBottom="5dip"
+	        android:layout_toLeftOf="@+id/line"
+	        android:text="name"/>
+	     
+	     <Button 
+	         android:id="@+id/delete"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         android:layout_centerVertical="true"
+	         android:drawableTop="@drawable/deletef"
+	         android:background="#00000000"
+	         android:textColor="@color/comm_night_color"
+	         android:layout_marginRight="10dip"
+	         android:layout_marginLeft="10dip"
+	         android:textSize="13dp"
+	         android:text="踢出群"/>
+	     
+	     <View 
+	         android:id="@+id/line"
+	         android:layout_width="1dip"
+	         android:layout_height="40dip"
+	         android:background="#d2d2d2"
+	         android:layout_toLeftOf="@+id/delete"
+	         android:layout_centerVertical="true"/>
+	</RelativeLayout>
+
+</LinearLayout>

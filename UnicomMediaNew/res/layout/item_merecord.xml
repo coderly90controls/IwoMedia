@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/comm_bg_color" >
+
+    <RelativeLayout
+        android:id="@+id/re_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" >
+        <ImageView 
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/img_yuan"
+            android:visibility="gone"
+            android:background="@drawable/me_item_yuan_w"
+            />
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/img_yuan"
+            android:layout_alignTop="@id/img_yuan"
+            android:id="@+id/img_leat"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/vi_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/re_layout"
+        android:layout_toRightOf="@id/re_layout"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/vi_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vi_title"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/re_layout"
+        android:textColor="@color/black"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="14dp" />
+
+</RelativeLayout>

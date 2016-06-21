@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:background="@color/comm_bg_color" >
+
+    <ImageView
+        android:id="@+id/title_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/logo"
+        android:visibility="gone" />
+
+        <ImageView
+        android:id="@+id/title_img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/iwologo"
+        android:visibility="gone" />
+    
+        
+    <TextView
+        android:id="@+id/title_tex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="48dip"
+        android:layout_marginRight="48dip"
+        android:layout_toLeftOf="@+id/right_textview"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="我的主页"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/left_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fanhui"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/left_img_1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fanhui"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_left_img1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/right_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="44dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="我追"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_left_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/title_img"
+        android:layout_toLeftOf="@+id/right_img"
+        android:background="@drawable/two_white_search"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/title_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/two_white_history"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/right_img1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/title_tex"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_centerInParent="true"
+        android:src="@drawable/setting1"
+        android:visibility="gone" />
+     <TextView
+        android:id="@+id/title_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="编辑"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

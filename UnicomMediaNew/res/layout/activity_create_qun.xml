@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="7dip"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/BigTextStyle"
+                android:text="群名称：" />
+
+            <EditText
+                android:id="@+id/name"
+                style="@style/EditTextStyle"
+                android:background="@drawable/bg_rect"
+                android:hint="请填写群名称"
+                android:padding="5dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#bebebe" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/BigTextStyle"
+                android:text="群分类：" />
+
+            <RelativeLayout
+                android:id="@+id/type_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/bg_rect"
+                android:padding="3dip" >
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="27dip"
+                    android:ellipsize="end"
+                    android:hint="请填写群名称"
+                    android:singleLine="true"
+                    android:textColor="@color/color_9d9d9d"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="27dip"
+                    android:layout_height="27dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/xiala" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#bebebe" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/BigTextStyle"
+                android:text="群地点：" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/address_1_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rect"
+                    android:padding="3dip" >
+
+                    <TextView
+                        android:id="@+id/address_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="27dip"
+                        android:ellipsize="end"
+                        android:hint="城市"
+                        android:singleLine="true"
+                        android:textColor="@color/color_9d9d9d"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xiala" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/address_2_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="3dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rect"
+                    android:padding="3dip" >
+
+                    <TextView
+                        android:id="@+id/address_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="27dip"
+                        android:ellipsize="end"
+                        android:hint="地区"
+                        android:singleLine="true"
+                        android:textColor="@color/color_9d9d9d"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="27dip"
+                        android:layout_height="27dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xiala" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/next"
+            style="@style/BlueBtnRadiuStyle"
+            android:layout_width="120dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="7dip"
+            android:text="下一步" />
+    </LinearLayout>
+
+</LinearLayout>

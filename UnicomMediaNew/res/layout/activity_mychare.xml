@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:id="@+id/grid_view_xian"
+        />
+
+    <GridView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:id="@+id/grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_view_xian"
+        android:gravity="center"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp" />
+    <ImageView 
+    	android:scaleType="fitXY"
+    	android:layout_centerVertical="true"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+	    android:id="@+id/moren_mychase_i"
+	    android:background="@drawable/moren_mychase"
+	    android:visibility="gone"
+	    />
+
+</RelativeLayout>

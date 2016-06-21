@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.android.iwo.media.preview.picture.PicGallery
+            android:id="@+id/pic_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:spacing="5dip" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/img_browse_title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="#ccFF6713" >
+
+        <ImageView
+            android:id="@+id/img_browse_title_image"
+            android:layout_width="44dip"
+            android:layout_height="44dip"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:id="@+id/img_browse_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="1/12"
+            android:textColor="#99ffffff"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:id="@+id/img_browse_title_share"
+            android:layout_width="44dip"
+            android:layout_height="44dip"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/camer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#99000000"
+        android:orientation="vertical"
+        android:padding="20dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/nor"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_blue_rect_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送给朋友"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/model"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="25dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/btn_blue_rect_selector"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/model_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存到本地"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cancle"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/btn_blue_rect_selector_zhuce"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

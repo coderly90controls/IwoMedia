@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/comm_bg_color"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="7dip"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_line"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:id="@+id/head"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/ico_default" />
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/BigTextStyle"
+                    android:layout_marginTop="10dip"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="ID 26554534" />
+
+                <TextView
+                    android:id="@+id/type"
+                    style="@style/norTextStyle"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="5dip"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="家人" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/norTextStyle"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="5dip"
+                    android:text="家人" />
+
+                <TextView
+                    android:id="@+id/chat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+                    android:background="@drawable/bg_white_line"
+                    android:paddingLeft="5dip"
+                    android:layout_below="@+id/head"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginTop="5dip"
+                    android:textSize="18dp"
+                    android:text="发起会话" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/bg_white_line"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/num"
+                    style="@style/BigTextStyle"
+                    android:layout_width="fill_parent"
+                    android:text="群成员 3人" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/comm_color" />
+
+                <com.android.iwo.media.view.ScrollGridView
+                    android:id="@+id/scrollGridView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="10dip"
+                    android:numColumns="4"
+                    android:verticalSpacing="10dip" >
+                </com.android.iwo.media.view.ScrollGridView>
+
+                <TextView
+                    android:id="@+id/add_new"
+                    style="@style/BlueBtnRectStyle"
+                    android:layout_width="150dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="10dip"
+                    android:text="邀请新成员" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/bg_white_line"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/chakanjilu" />
+
+                <TextView
+                    style="@style/BigTextStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dip"
+                    android:text="查看聊天记录" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rightjiantou" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/bg_white_line"
+                android:padding="5dip" >
+
+                <ImageView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/qxxsz" />
+
+                <TextView
+                    style="@style/BigTextStyle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="35dip"
+                    android:text="群消息接收" />
+
+                <ImageView
+                    android:id="@+id/off"
+                    android:layout_width="45dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/switchon" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/delete"
+                style="@style/BlueBtnRectStyle"
+                android:layout_width="150dip"
+                android:layout_height="40dip"
+                android:layout_marginTop="20dip"
+                android:text="解散该群" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

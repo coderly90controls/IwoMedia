@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+    
+<TextView 
+    android:id="@+id/name"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_margin="8dip"
+    android:padding="5dip"
+    android:text="name11111111111111111111111111111"
+    android:textSize="13dp"
+    android:gravity="center"
+   
+    android:textColor="#000000"
+    android:background="#ffffff"/>
+<!--  android:singleLine="true"
+    android:ellipsize="middle" -->
+<ImageView 
+    android:id="@+id/close"
+    android:layout_width="20dip"
+    android:layout_height="20dip"
+    android:background="@drawable/ico_delete"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"/>
+</RelativeLayout>

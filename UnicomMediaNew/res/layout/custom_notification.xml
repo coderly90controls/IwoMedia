@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip" >
+    
+    <ImageView 
+        android:id="@+id/ico"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="7dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ico"
+        android:layout_toLeftOf="@+id/time"
+        android:textColor="#ffffff"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="aaaaaaaaaaa"
+        android:textSize="18dp"/>
+    
+    <TextView 
+        android:id="@+id/con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ico"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="3dip"
+        android:textColor="#bbbbbb"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="aaaaaaaaaaa"
+        android:textSize="14dp"/>
+    
+    <TextView 
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#bbbbbb"
+        android:text="bbbbbbbbbbbb"
+        android:textSize="14dp"/>
+
+</RelativeLayout>

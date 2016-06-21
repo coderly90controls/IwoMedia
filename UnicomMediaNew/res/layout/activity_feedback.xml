@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_feedback"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_list" />
+
+    <RelativeLayout
+        android:id="@+id/about_us_layout_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dip"
+        android:background="@color/comm_bg_color"
+        android:paddingBottom="10dp" >
+
+        <EditText
+            android:id="@+id/feedback"
+            style="@style/EditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_area"
+            android:gravity="left"
+            android:hint="请在此输入反馈信息"
+            android:lines="12"
+            android:maxLength="40"
+            android:padding="5dp"
+            android:textColor="@color/comm_black_color"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/feedback_determine"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:layout_below="@id/feedback"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="提   交"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/id_shade3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:scrollY="1dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/feedback_cancel"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="#A8A8A8"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="#eeffffff"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>

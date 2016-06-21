@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+     >
+<CheckBox 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/me_layout_checkbox"
+   	android:visibility="gone"
+    />
+    <ImageView
+        android:layout_toRightOf="@id/me_layout_checkbox"
+        android:id="@+id/me_layout_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+    <TextView 
+        android:layout_marginLeft="7dp"
+        android:layout_width="150dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:id="@+id/me_layout_content"
+       android:layout_toRightOf="@id/me_layout_imageview"
+       android:layout_marginTop="10dp"
+        android:text="我的的一生我的的一生我的的一生我的的一生我的的一生我的的一生我的的一生我的的一生我的的一生"
+        />
+    <Button 
+        android:layout_alignParentRight="true"
+        android:layout_margin="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/me_layout_button_delete"
+        android:text="删除"
+        android:visibility="gone"
+        />
+    <TextView 
+         android:layout_toRightOf="@id/me_layout_content"
+         android:layout_alignTop="@id/me_layout_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/me_layout_time"
+        android:textColor="@color/black"
+        android:text="2012 04 05 12:03:070000000000000000145478889210000000000"
+        
+        />
+
+</RelativeLayout>

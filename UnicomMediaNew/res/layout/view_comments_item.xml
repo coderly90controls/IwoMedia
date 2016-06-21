@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_bg_color"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/comments_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9EE09"
+        android:padding="5dp" >
+
+        <com.android.iwo.media.view.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/detail_comment_user_img" />
+
+        <TextView
+            android:id="@+id/comm_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/user_img"
+            android:lines="1"
+            android:text="用户名"
+            android:textColor="@color/comm_bg_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/user_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/comm_user_name"
+            android:layout_below="@id/comm_user_name"
+            android:layout_marginTop="4dp"
+            android:text="评论内容"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/comments_layout"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

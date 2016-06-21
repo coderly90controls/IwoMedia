@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_radiu_while">
+        
+        <ImageView 
+            android:id="@+id/head"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/ico_default"/>
+        
+        <TextView 
+            android:id="@+id/name"
+            style="@style/BigTextStyle"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/head"
+            android:text="稀奇古怪"/>
+        
+        <TextView 
+            android:id="@+id/tel"
+            style="@style/norTextStyle"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/head"
+            android:text="稀奇古怪"/>
+        
+        <ImageView 
+            android:id="@+id/add"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tianjiahaoyou"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/comm_title"/>
+    <EditText 
+        android:id="@+id/search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/ico_chat_tel_ok"
+        android:hint="搜索好友"
+        android:padding="5dip"
+        android:layout_margin="7dip"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dip"
+        android:background="#ffffff"
+        android:text="最近联系人"
+        android:textSize="14dp"
+        android:textColor="#000000"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"/>
+    <ListView 
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:scrollbars="none"/>
+
+</LinearLayout>

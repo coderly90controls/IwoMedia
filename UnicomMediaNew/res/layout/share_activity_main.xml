@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/share_bg" >
+
+    <include
+        android:layout_alignParentTop="true"
+        layout="@layout/share_comm_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分享内容:"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/share_edit_bg"
+                android:editable="false"
+                android:gravity="top"
+                android:hint="分享点什么呢"
+                android:padding="5dip"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="分享号码"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/add_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/share_bg_selector"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip"
+                    android:gravity="center"
+                    android:text="选择好友"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/friend"
+                android:layout_width="fill_parent"
+                android:layout_height="80dip"
+                android:background="@drawable/share_edit_bg"
+                android:gravity="top"
+                android:hint="多个号码用分号隔开"
+                android:padding="5dip"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dip" >
+
+            <TextView
+                android:id="@+id/share"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/share_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="免费分享"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/share_back"
+                android:layout_width="80dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_horizontal"
+                
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/share_bg_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="返回"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_gravity="center_horizontal"
+            android:background="#9ac7e3"
+            android:gravity="center"
+            android:text="精准沟通   版权所有"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#88000000"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/share_btn_style_alert_dialog_background"
+            android:orientation="vertical"
+            android:padding="20dip" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/share_btn_bg_selector"
+                android:text="登录"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/regist"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/share_btn_bg_selector"
+                android:text="注册"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/cancle"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/share_btn_bg_selector"
+                android:text="取消"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

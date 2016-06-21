@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/comm_title" />
+
+    <WebView
+        android:layout_below="@+id/title"
+        android:id="@+id/wb_aboutus_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:scrollbars="vertical" />
+    
+
+</RelativeLayout>

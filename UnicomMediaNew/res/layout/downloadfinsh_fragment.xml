@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+    
+
+        <ListView
+        android:id="@+id/download_finsh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:groupIndicator="@null"
+        android:fadingEdge="none"
+       
+        
+      />
+    
+
+       <TextView 
+          android:id="@+id/nothing_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:visibility="gone"
+          android:text="暂无相关数据"
+          android:textColor="@color/white"
+          android:textSize="14dp"
+          android:layout_centerInParent="true"
+          
+          />
+    
+       
+          <LinearLayout
+                  android:id="@+id/selection_menu"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="40dp"
+                  android:gravity="center"
+                  android:layout_gravity="center"
+                  android:visibility="gone"
+                  android:layout_alignParentBottom="true"
+                >
+              <Button 
+                  android:id="@+id/selection_all"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:text="全选"
+                  android:textSize="16dp"
+                  android:textColor="@color/white"
+                  android:background="@color/comm_bg_color_new"
+                />
+          
+              
+             
+              
+               <Button 
+                  android:id="@+id/selection_delete"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1"
+                  android:layout_marginLeft="1dp"
+                  android:text="删除（1）"
+                  android:textSize="16dp"
+                  android:textColor="@color/white"
+                  android:background="@color/comm_bg_color_new"
+                  
+              />
+
+      </LinearLayout>
+       
+       
+</RelativeLayout>

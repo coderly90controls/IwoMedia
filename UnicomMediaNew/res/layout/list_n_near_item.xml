@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="72dip"
+    android:paddingBottom="3dip"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:paddingTop="3dip" >
+
+    <RelativeLayout
+        android:id="@+id/itemview"
+        android:layout_width="fill_parent"
+        android:layout_height="72dip"
+        android:background="@drawable/bg_white_line"
+        android:orientation="vertical"
+        android:padding="1dip" >
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/ico_default"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/BigTextStyle"
+            android:layout_marginTop="2dip"
+            android:layout_toRightOf="@+id/head"
+            android:text="Dream" />
+
+        <TextView
+            android:id="@+id/age"
+            style="@style/norTextStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dip"
+            android:layout_toRightOf="@+id/head"
+            android:text="25"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/sex"
+            android:layout_width="12dip"
+            android:layout_height="13dip"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="3dip"
+            android:layout_toRightOf="@+id/age"
+            android:background="@drawable/boy"
+            android:text="25" />
+
+        <TextView
+            android:id="@+id/sign"
+            style="@style/norTextStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dip"
+            android:layout_toRightOf="@+id/head"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="人生能有几多愁"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/time_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/address"/>
+            <TextView
+                android:id="@+id/address"
+                style="@style/norTextStyle"
+                android:text="10m | "
+                android:textSize="12dp" />
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time"/>
+            <TextView
+                android:id="@+id/time"
+                style="@style/norTextStyle"
+                android:text="1分钟前"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/list_item2"
+        android:layout_width="fill_parent"
+        android:layout_height="66dip"
+        android:background="@drawable/bg_white_line"
+        android:padding="1dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/ico_default" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_toRightOf="@+id/img2"
+            android:textColor="@color/color_3f3f51"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name2"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/img2"
+            android:text="请求添加你为好友"
+            android:textColor="@color/color_9d9d9d"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/yanzhen"
+            style="@style/BlueBtnRectStyle"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:padding="5dip"
+            android:text="通过验证"
+            android:textSize="14dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/sy_layout_jintian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <!-- 今天 -->
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp" >
+
+                    <View
+                        android:id="@+id/discover_item_img_view"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/xu_huangxian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="今天最好看的电影"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/sy_textring_jin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="今天"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/sy_jintian_1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_jintian_2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignTop="@id/sy_jintian_1"
+                        android:layout_toRightOf="@id/sy_jintian_1"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_jintian_3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignBottom="@id/sy_jintian_1"
+                        android:layout_toRightOf="@id/sy_jintian_1"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_jintian_4"
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:layout_alignLeft="@id/sy_jintian_1"
+                        android:layout_below="@id/sy_jintian_1"
+                        android:background="@drawable/souye_weizhi" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/syte_j_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/showall" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"      
+                        android:text="加载更多"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 昨天 -->
+
+            <LinearLayout
+                android:id="@+id/sy_layout_zuotian"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp" >
+
+                    <View
+                        android:id="@+id/discover_item_img_view"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/xu_huangxian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="昨天最好看的电影"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/sy_textring_zuo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="昨天"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/sy_zuotian_2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_zuotian_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignTop="@id/sy_zuotian_2"
+                        android:layout_toLeftOf="@id/sy_zuotian_2"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_zuotian_3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignBottom="@id/sy_zuotian_2"
+                        android:layout_toLeftOf="@id/sy_zuotian_2"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_zuotian_4"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_alignLeft="@id/sy_zuotian_3"
+                        android:layout_below="@id/sy_zuotian_3"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_zuotian_5"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_alignRight="@id/sy_zuotian_2"
+                        android:layout_below="@id/sy_zuotian_2"
+                        android:background="@drawable/souye_weizhi" />
+                </RelativeLayout>
+                 <LinearLayout
+                    android:id="@+id/syte_z_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/showall" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"      
+                        android:text="加载更多"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 前天 -->
+
+            <LinearLayout
+                android:id="@+id/sy_layout_qiantian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:id="@+id/discover_item_img_view"
+                        android:layout_width="2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/xu_huangxian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="前天最好看的电影"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/sy_textring_qian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:text="前天"
+                        android:textColor="@android:color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sy_layout_qiantian"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_toRightOf="@id/sy_qiantian_1"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_toRightOf="@id/sy_qiantian_2"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_5"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/sy_qiantian_3"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignTop="@id/sy_qiantian_5"
+                        android:layout_toLeftOf="@id/sy_qiantian_5"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_6"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignBottom="@id/sy_qiantian_5"
+                        android:layout_toLeftOf="@id/sy_qiantian_5"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/sy_qiantian_6"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignTop="@id/sy_qiantian_7"
+                        android:layout_toRightOf="@id/sy_qiantian_7"
+                        android:background="@drawable/souye_weizhi" />
+
+                    <ImageView
+                        android:id="@+id/sy_qiantian_9"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignTop="@id/sy_qiantian_8"
+                        android:layout_toRightOf="@id/sy_qiantian_8"
+                        android:background="@drawable/souye_weizhi" />
+                </RelativeLayout>
+                 <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/syte_q_more"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/showall" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"      
+                        android:text="加载更多"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

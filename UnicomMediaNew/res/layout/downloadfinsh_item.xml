@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:descendantFocusability="afterDescendants"
+  >
+    
+    
+   <RelativeLayout 
+       android:id="@+id/downlaod_finsh_zong_layout"
+       android:layout_width="fill_parent"
+       android:layout_height="62dp"
+   >
+       
+   <RelativeLayout 
+             android:id="@+id/downloading_layou"
+             android:layout_width="fill_parent"
+             android:layout_height="50dp"
+             android:layout_marginLeft="6dp"
+             android:layout_marginRight="6dp"
+             android:layout_marginTop="6dp"
+        >
+         
+         
+           <ImageView 
+		     android:id="@+id/downloading_img"
+		     android:layout_width="60dp"
+		     android:layout_height="60dp"
+		     android:src="@drawable/ic_launcher"
+		     android:scaleType="fitXY" 
+		     android:layout_marginLeft="4dp"
+		     
+		     />   
+            
+	      <TextView 
+		     android:id="@+id/downloading_name" 
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_toRightOf="@+id/downloading_img"
+		     android:singleLine="true"
+		     android:text="IOS开发课程ssssssssssssssssssssssssssssssssssssssssssss"
+		     android:textColor="#373737" 
+		     android:ellipsize="marquee"
+		     android:layout_marginLeft="4dp"
+		     android:textSize="14dp"
+		     />
+                  
+	         
+	      
+	      <TextView
+                android:id="@+id/play_button"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/downloading_img"
+                android:layout_alignParentBottom="true"
+                android:text="播放"
+                android:background="@color/comm_color_chense"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:textSize="12dp"
+                android:focusable="false"
+            />
+	      
+	      <TextView 
+	            android:id="@+id/file_size"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:textColor="@color/black"
+	            android:textSize="12dp"
+	            android:layout_alignParentBottom="true"
+	            android:text="25mb"
+	          
+	          
+	          />
+	      
+	       <CheckBox 
+	           android:id="@+id/downloading_checks"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentRight="true"
+	           android:clickable="false"  
+               android:focusable="false"  
+               android:focusableInTouchMode="false"  
+               style="@style/CustomCheckboxTheme"
+	        />
+	         
+	      
+        </RelativeLayout>
+	     <View 
+           android:id="@+id/fenge_view"
+           android:layout_width="fill_parent"
+           android:layout_height="1px"
+           android:layout_alignParentBottom="true"
+           android:background="@color/red"
+           android:layout_marginLeft="6dp"
+           android:layout_marginRight="6dp"
+	      />   
+   
+   </RelativeLayout> 
+    
+</RelativeLayout>

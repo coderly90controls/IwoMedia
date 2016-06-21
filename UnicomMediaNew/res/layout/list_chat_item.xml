@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="7dip" >
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dip"
+        android:background="#9a9a9a"
+        android:padding="3dip"
+        android:text="下午:13:20"
+        android:textColor="#ffffff"
+        android:textSize="12dp" />
+
+    <RelativeLayout
+        android:id="@+id/send_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:paddingLeft="80dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/send_dur"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/send_linelayout"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/send_linelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/send_head"
+            android:background="@drawable/chat_img_right"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/send_tex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:paddingRight="10dip"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/send_img_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="10dip"
+                    android:paddingRight="15dip"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/send_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/send_img_"
+                    android:layout_width="100dip"
+                    android:layout_height="50dip"
+                    android:background="@drawable/video_zhanwei"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chat_img_right_"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/send_add_tex"
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/send_img_"
+                    android:layout_marginTop="-30dip"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/send_head"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/ico_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/get_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="80dip"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/get_linelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/get_head"
+            android:background="@drawable/chat_img_left" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="10dip" >
+
+                    <ImageView
+                        android:id="@+id/get_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/get_img_"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/video_zhanwei"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chat_img_left_"/>
+
+                <TextView
+                    android:id="@+id/get_add_tex"
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/get_img_"
+                    android:layout_marginTop="-30dip"
+                    android:layout_marginLeft="5dip"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/get_tex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dip"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/get_head"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/ico_default" />
+
+        <TextView
+            android:id="@+id/get_dur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/get_linelayout"
+            android:text="10&apos;&apos;"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</LinearLayout>

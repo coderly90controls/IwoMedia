@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/comm_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="7dip"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/BigTextStyle"
+            android:text="请设置头像,昵称,方便朋友认出你" />
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dip"
+            android:src="@drawable/ico_default" />
+
+        <EditText
+            android:id="@+id/nick_name"
+            style="@style/EditTextStyle"
+            android:background="@drawable/bg_white_grey_edit"
+            android:hint="请设置您的昵称"
+            android:maxLength="16"
+           android:textColor="@color/color_9d9d9d" />
+
+        <EditText
+            android:id="@+id/pass_word"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/bg_white_grey_edit"
+            android:hint="请设置您的登录密码（6~20位字符）"
+            android:inputType="textPassword"
+            android:maxLength="20"
+           android:textColor="@color/color_9d9d9d" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/btn_blue_rect_selector"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

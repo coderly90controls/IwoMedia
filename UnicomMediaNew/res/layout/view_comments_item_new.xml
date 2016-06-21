@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/comm_bg_color_new"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/comments_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <!-- android:background="#F9EE09" -->
+
+        <com.android.iwo.media.view.CircleImageView
+            android:id="@+id/user_img"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/user_edit" />
+
+        <RelativeLayout
+            android:id="@+id/one_line"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/user_img" >
+
+            <TextView
+                android:id="@+id/comm_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="用户名"
+                android:textColor="#f2e725"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/comment_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="时间："
+                android:textColor="#C2EDC2"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/count_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="25dip"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/one_line"
+            android:layout_below="@id/one_line"
+            android:layout_marginTop="4dp"
+            android:text="评论内容"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <!-- 这个是评论内容下面的评论主题 -->
+
+        <TextView
+            android:id="@+id/com_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_comment"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/user_img"
+            android:background="#55000000"
+            android:text="奇妙的朋友第二期：xxx"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/comments_layout"
+        android:layout_marginTop="5dp"
+        android:background="@color/white" />
+
+</RelativeLayout>

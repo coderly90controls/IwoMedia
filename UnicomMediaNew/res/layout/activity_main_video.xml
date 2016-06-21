@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:gravity="fill_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/topOver"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/video_close"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="12dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/video_close" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/video_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/video_transcribe"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/video_reversal"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="12dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/video_reversal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topStart"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/video_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/video_start"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topFinish"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/video_return"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="12dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/video_return" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/video_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="12dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/video_finish" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/topTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/video_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/surfaceview"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="20s"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/video_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/topTitle"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_preview"
+        android:visibility="gone" />
+
+</RelativeLayout>
